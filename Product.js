@@ -50,3 +50,6 @@ for (const p of product1) {
     }
 }
 
+const sellingInStockNames = product1.filter(function (p) {return p.isAvailable && p.quantity > 0;})
+   .map(function (p) {return p.name;});
+console.log(sellingInStockNames);
