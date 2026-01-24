@@ -34,4 +34,8 @@ const AvailableProducts = product1.every(function (p) {
     return p.category !== "Điện thoại" || p.isAvailable;
 });
 
+const totalInventoryValue = product1.reduce(function (sum, p) {
+    return sum + p.price * p.quantity;
+}, 0);
+
 
