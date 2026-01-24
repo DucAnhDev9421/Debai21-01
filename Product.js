@@ -42,4 +42,11 @@ for (const p of product1) {
     console.log(p.name + p.category + p.isAvailable);
 }
 
+for (const p of product1) {
+    for (const key in p) {
+        if (Object.prototype.hasOwnProperty.call(p, key)) {
+            console.log(key + ":" + p[key]);
+        }
+    }
+}
 
