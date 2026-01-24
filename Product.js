@@ -38,4 +38,8 @@ const totalInventoryValue = product1.reduce(function (sum, p) {
     return sum + p.price * p.quantity;
 }, 0);
 
+for (const p of product1) {
+    console.log(p.name + p.category + p.isAvailable);
+}
+
 
