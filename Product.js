@@ -25,3 +25,5 @@ var product2 = [
     { name: "Tai nghe Sony", price: 1290000 },
     { name: "Loa JBL", price: 990000 }
 ];
+
+const productInStock = product1.filter(function (p) {return p.quantity > 0;});
