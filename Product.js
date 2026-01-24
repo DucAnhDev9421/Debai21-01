@@ -29,3 +29,9 @@ var product2 = [
 const productInStock = product1.filter(function (p) {return p.quantity > 0;});
 
 const hasPriceOver30m = product1.some(function (p) {return p.price > 30000000;});
+
+const AvailableProducts = product1.every(function (p) {
+    return p.category !== "Điện thoại" || p.isAvailable;
+});
+
+
